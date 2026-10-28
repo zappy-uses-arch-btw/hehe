@@ -1,0 +1,8 @@
+* { border-radius: 0 !important; }
+.tab-background, 
+.tab-stack, 
+.tab-content,
+.tabbrowser-tab {
+    border-radius: 0px !important;
+}
+
