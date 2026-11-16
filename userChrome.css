@@ -1,8 +1,25 @@
-* { border-radius: 0 !important; }
-.tab-background, 
-.tab-stack, 
+/* Existing square-tab rules from your original userChrome.css */
+.tab-background,
+.tab-stack,
 .tab-content,
 .tabbrowser-tab {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
+/* FORCE SQUARE CORNERS THROUGHOUT FIREFOX CHROME UI */
+*,
+*::before,
+*::after {
+    border-radius: 0 !important;
+}
+
+/* Hide Firefox Account / Sync entry points in the browser UI.
+   The user.js also disables the underlying account and Sync features. */
+#appMenu-fxa-container,
+#appMenu-fxa-sign-in-promo,
+#appMenu-fxa-label,
+#appMenu-fxa-icon,
+#fxa-toolbar-menu-button,
+#fxa-toolbar-menu-button > .toolbarbutton-icon {
+    display: none !important;
+}
