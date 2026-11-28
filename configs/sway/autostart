@@ -1,0 +1,4 @@
+exec swaybg -i /home/duke/Pictures/Wallpapers/wallhaven-9oe8v8.jpg
+exec autotiling
+exec /usr/bin/lxpolkit
+exec nm-applet

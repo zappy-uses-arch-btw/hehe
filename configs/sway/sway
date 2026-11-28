@@ -1,0 +1,23 @@
+font pango:JetBrains Mono 11
+
+corner_radius 0
+animation_duration_ms 150
+shadows disable 
+
+blur enable
+blur_passes 2
+blur_radius 5
+
+default_border pixel
+default_border pixel 3
+
+client.focused           #9aa5ce #16161d #c0caf5 #9aa5ce   #9aa5ce
+client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
+client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
+
+layer_effects "launcher" {
+    blur enable;
+    blur_ignore_transparent enable;
+}
+
+gaps inner 7

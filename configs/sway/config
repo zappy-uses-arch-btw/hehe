@@ -1,0 +1,5 @@
+include /etc/sway/config.d/*
+include $HOME/.config/sway/keybinds
+include $HOME/.config/sway/autostart
+include $HOME/.config/sway/sway
+include $HOME/.config/sway/bar

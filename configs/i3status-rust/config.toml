@@ -1,0 +1,61 @@
+icons_format = "{icon}"
+
+[icons]
+icons = "awesome7"
+
+[theme]
+theme = "plain"
+
+[theme.overrides]
+idle_bg = "#1a1b2600"
+idle_fg = "#c0caf5"
+info_bg = "#1a1b2600"
+info_fg = "#7aa2f7"
+good_bg = "#1a1b2600"
+good_fg = "#9ece6a"
+warning_bg = "#1a1b2600"
+warning_fg = "#e0af68"
+critical_bg = "#1a1b2600"
+critical_fg = "#f7768e"
+separator = " | "
+separator_bg = "#1a1b2600"
+separator_fg = "#565f89"
+end_separator = " |"
+
+[[block]]
+block = "focused_window"
+[block.format]
+full = "$title.str(max_w:21)|"
+short = "$title.str(max_w:21)|"
+[block.theme_overrides]
+idle_fg = "#9ece6a"
+idle_bg = "#1a1b2600"
+
+[[block]]
+block = "sound"
+format = "$icon $volume"
+show_volume_when_muted = true
+[[block.click]]
+button = "left"
+cmd = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+[[block.click]]
+button = "up"
+cmd = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+[[block.click]]
+button = "down"
+cmd = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+[block.theme_overrides]
+idle_fg = "#7aa2f7"
+idle_bg = "#1a1b2600"
+info_fg = "#7aa2f7"
+info_bg = "#1a1b2600"
+warning_fg = "#f7768e"
+warning_bg = "#1a1b2600"
+
+[[block]]
+block = "time"
+interval = 5
+format = "$icon $timestamp.datetime(f:'%H:%M')"
+[block.theme_overrides]
+idle_fg = "#bb9af7"
+idle_bg = "#1a1b2600"
